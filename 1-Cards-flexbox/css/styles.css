@@ -1,0 +1,40 @@
+body{
+    box-sizing: border-box;
+    background-color: #ecececf2;
+}
+
+.contenedor{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h2{
+    flex: 0 1 100%;
+}
+
+img{
+    max-width: 100%;
+}
+
+main{
+    padding: 1rem;
+}
+
+@media screen and (min-width:480px){
+    
+    .contenido-principal{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }    
+    .entrada{
+        flex: 0 1 calc(50% - 1rem);
+    }
+}
+
+@media screen and (min-width:786px){
+    .entrada{
+        flex: 0 1 calc(33% - 1rem);
+    }
+}
+

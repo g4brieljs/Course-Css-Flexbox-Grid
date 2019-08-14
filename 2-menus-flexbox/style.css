@@ -1,0 +1,255 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    background: #4b8fe9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4b8fe9, #66c2ff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4b8fe9, #66c2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'IBM Plex Serif', serif; 
+}
+
+.contenedor{
+    max-width: 1000px;
+    min-height: calc( 200vh - 20px ); 
+    margin: 0 auto;
+    background: white;
+    padding: 20px 30px 0 30px;
+}
+
+nav{
+    background:  rgb(26, 159, 236);
+}
+
+nav ul{
+    margin:0;
+    padding:0;
+    list-style: none; 
+}
+
+nav ul li{
+    padding: 20px;
+    transition: .3s ease;
+}
+
+nav ul li:hover{
+    background: #575b6f;
+}
+
+nav ul a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+
+/* CSS FLexbox - .Sencillo */
+
+.sencillo ul{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.sencillo li{
+    text-align: center;
+    margin-bottom: .5rem;
+    flex: 2;
+}
+
+@media screen and (min-width:768px){
+    .sencillo ul{
+        flex-direction: row;
+    }
+    .sencillo li{
+        margin-bottom: 0;
+    }
+}
+
+
+/* FLexbox .ionos */ 
+
+.iconos ul li a{
+    display: flex;
+    justify-content: center;
+}
+
+.iconos .icono{
+    flex: 0 1 2rem;
+}
+
+.iconos .texto span{
+    font-size: .8rem;
+    display: block;
+    margin-top: .5rem;
+}
+
+@media screen and (min-width:480px){
+    .iconos ul{
+        display: flex;  
+        flex-wrap: wrap;
+    }
+    
+    .iconos ul li{
+        flex: 0 1 50%;
+    }
+}
+
+@media screen and (min-width:768px){
+    .iconos ul li{
+        flex: 1;
+    }
+}
+
+/* Dropdown Menu */
+
+
+.dropdown ul{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:768px){
+    .dropdown ul{
+        flex-direction: row;
+    }
+}
+
+.dropdown ul li{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width:768px){
+    .dropdown ul li{
+        position: relative;
+        display: flex;
+        flex: 1 1 100%;
+    }
+    .dropdown ul li ul{
+        display: none;
+        position: absolute;
+        top: 100%;
+        background-color: rgb(0, 183, 255, .6);
+    }
+    .dropdown ul li:hover ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+
+/* Social Networks */
+
+.sociales ul li span{
+    display: none;
+}
+
+.sociales ul{
+ display: flex;
+ justify-content: flex-end;
+}
+
+.sociales ul li a::before{
+    font-family: "Font Awesome 5 Brands";
+}
+
+.sociales ul li a[href*='facebook.com']::before{
+    content: "\f39e";
+}
+
+.sociales ul li a[href*='twitter.com']::before{
+    content: "\f099";
+}
+
+.sociales ul li a[href*='youtube.com']::before{
+    content: "\f167";
+}
+
+.sociales ul li a[href*='instagram.com']::before{
+    content: "\f16d";
+}
+
+.sociales ul li a[href*='pinterest.com']::before{
+    content: "\f231";
+}
+
+
+/* Menú Dropdown con Iconos de redes sociales */
+
+.redes-dropdown{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.redes-dropdown ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.redes-dropdown ul li{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width:768px){
+    .redes-dropdown ul{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+@media screen and (min-width:768px){
+    .redes-dropdown ul li{
+        position: relative;
+        display: flex;
+        flex: 1 1 100%;
+    }
+
+    .redes-dropdown ul li ul{
+        display: none;
+        position: absolute;
+        background-color: rgb(0, 183, 255, .6);
+        top: 100%;
+        
+    }
+
+    .redes-dropdown ul li:hover ul{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+.redes-dropdown ul li span{
+    display: none;
+}
+
+.redes-dropdown ul li a::before{
+    font-family: "Font Awesome 5 Brands";
+}
+
+.redes-dropdown ul li a[href*='facebook.com']::before{
+    content: "\f39e";
+}
+
+.redes-dropdown ul li a[href*='twitter.com']::before{
+    content: "\f099";
+}
+
+.redes-dropdown ul li a[href*='youtube.com']::before{
+    content: "\f167";
+}
+
+.redes-dropdown ul li a[href*='instagram.com']::before{
+    content: "\f16d";
+}
+
+.redes-dropdown ul li a[href*='pinterest.com']::before{
+    content: "\f231";
+}
