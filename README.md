@@ -4,7 +4,7 @@ And this repository, i will be uploading summary of course Css advanced with Fle
 
 # First project
 
-![Cards](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/1-Cards-flexbox/Card-flexbox.png)
+![Cards](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/1-Cards-flexbox/cardflexbox.png)
 
 # Second project
 
@@ -12,4 +12,8 @@ And this repository, i will be uploading summary of course Css advanced with Fle
 
 # Third project
 
-![Universidad](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/3-Universidad-flexbox-Sass-Gulp/unversidad-flexbox.png)
+![Universidad](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/3-Universidad-flexbox-Sass-Gulp/unversidadflexbox.png)
+
+# Fourth project
+
+![TravelBlog](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/4-Blog-viajes-flexbox/blog-flexbox.png)
