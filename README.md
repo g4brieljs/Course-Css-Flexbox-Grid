@@ -32,7 +32,7 @@ And this repository, i will be uploading summary of course Css advanced with Fle
 
 # Eighth project | Mansory style with Flexbox
 
-![mansory](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/6-layoutsFlex-flexbox/mansory-flexbox.png)
+![mansory](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/7-layoutsFlex-flexbox/mansory-flexbox.png)
 
 # Nineth project | Footer fixed with flexbox
 
