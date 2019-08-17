@@ -34,10 +34,12 @@ And this repository, i will be uploading summary of course Css advanced with Fle
 
 ![mansory](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/6-layoutsFlex-flexbox/mansory-flexbox.png)
 
-# Nineth project | Dashboard with Flexbox
-
-![Admin](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/8-adminflex-flexbox/admin-flexbox-gulp-sass.png)
-
 # Nineth project | Footer fixed with flexbox
 
 ![Admin](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/7-layoutsFlex-flexbox/footer-fijo-flexbox.png)
+
+# Tenth project | Dashboard with Flexbox
+
+![Admin](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/8-adminflex-flexbox/admin-flexbox-gulp-sass.png)
+
+
