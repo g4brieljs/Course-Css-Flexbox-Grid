@@ -24,11 +24,11 @@ And this repository, i will be uploading summary of course Css advanced with Fle
 
 # Sixth project | Coments with Flexbox
 
-![Coments](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/6-layoutsFlex-flexbox/cometarios-flexbox.png)
+![Coments](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/7-layoutsFlex-flexbox/cometarios-flexbox.png)
 
 # Seventh project | Center text, and vertical with Flexbox
 
-![Center](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/6-layoutsFlex-flexbox/centrado-vertical.png)
+![Center](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/7-layoutsFlex-flexbox/centrado-vertical.png)
 
 # Eighth project | Mansory style with Flexbox
 
@@ -36,4 +36,8 @@ And this repository, i will be uploading summary of course Css advanced with Fle
 
 # Nineth project | Dashboard with Flexbox
 
-![Admin](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/7-adminflex-flexbox/admin-flexbox-gulp-sass.png)
+![Admin](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/8-adminflex-flexbox/admin-flexbox-gulp-sass.png)
+
+# Nineth project | Footer fixed with flexbox
+
+![Admin](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/7-layoutsFlex-flexbox/footer-fijo-flexbox.png)
