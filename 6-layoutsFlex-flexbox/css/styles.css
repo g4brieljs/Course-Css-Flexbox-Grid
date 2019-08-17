@@ -1,0 +1,140 @@
+html {
+    box-sizing: border-box;
+    min-height: 100%;
+}
+*, *:before, *:after {
+box-sizing: inherit;
+}
+body {
+    min-height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+}
+h2 {
+    text-align: center;
+}
+.contenedor {
+    background-color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    
+}
+
+/*Media object*/
+
+.contenedor-comentario{
+    /* Cuando aplicamos flex, la imagen el texto mediran lo mismo, provacando que la imaegn se estire al igual que el texto */
+    display: flex;
+    align-items: flex-start;
+    /* Por default es align-items: stretch;*/
+}
+
+.contenedor-comentario .avatar{
+    margin-right: 1rem;
+}
+
+.segundo-nivel{
+    background-color: #e1e1e1;
+    padding: 1rem;
+}
+
+/*Footer, vamos a posicionar el footer siempre abajo de la pantalla, si lo hacemos con un bottom 0, y position fixed, hace que el el footer siempre quede abajo, pero con flex 1, podemos dejarlo abajo y no afecta a pesar de tener mucho o poco contenido*/
+
+.pagina{
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh;
+}
+
+.pagina h1, 
+.pagina h2{
+    margin: 0;  
+}
+
+/* Selecconia el primer hijo de cada uno */
+.pagina > * {
+    padding: 1rem;
+}
+
+.pagina .encabezado{
+    background-color: #cddc39;
+}
+
+.pagina .contenido-principal{
+    background-color: #80d0c7;
+    max-width: 800px;
+
+    margin: 0 auto;
+    flex: 1;
+}
+
+.pagina .footer{
+    background-color: black;
+    color: white;
+}
+
+/* Centrado */
+
+.centrado{
+    background-image: url(../img/hamburguesa.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /*Evita que si la pantalla es grande se siga viendo bien*/
+    background-size: cover;
+
+    /*Para centrar horizontalmente*/
+    display: flex;
+    justify-content: center;
+    /*El fondo si se queda full*/
+    min-height: 100vh;
+    align-items: center;
+}
+
+/*Primer nivel de hijos*/
+.centrado > div{ 
+    flex: 0 0 calc(33.3% - 3rem);
+}
+
+.contenido-centrado{
+    color: white;
+    text-align: center;
+}
+
+.contenido-centrado h1{
+    color: #e0ab10;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.contenido-centrado p{
+    margin: 0;
+}
+
+.contenido-centrado .ubicacion{
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+.aviso{
+    background-color: #e0ab10;
+    padding: 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.aviso span{
+    font-size: 3rem;
+    display: block; /*Con esto centramos el texto*/
+}
+
+.arriba{
+    align-self: flex-start;
+    margin-top: 1rem;
+}
+
+.abajo{
+    align-self: flex-end;
+    margin-bottom: 1rem;
+}

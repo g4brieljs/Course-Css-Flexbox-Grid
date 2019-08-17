@@ -1,0 +1,110 @@
+html {
+    box-sizing: border-box;
+}
+/*Cuando agreguemos padding no permita que le afecte */
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex; /*Esto pondra por default todos los elementos hacia el frente*/
+    flex-direction: column; 
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+.encabezado-sitio{
+    padding: 2rem 0; /*Esto permitira que se acomode mejor*/
+    display: flex;
+    justify-content: center;
+}
+
+.navegacion{
+    background-color: #05bae6;
+}
+
+.navegacion ul{
+    max-width: 800px; /*Esto hara que no pase de esa cantida de pixeles*/
+    margin: 0 auto; /*Tecnica de CSS normal para centrar, en este caso al contenedor UL*/
+
+    display: flex; /*Esto aplicara Flex a los elementos li*/
+    justify-content: space-around; 
+    /*
+    space-around y space-betwen los separa, la diferencia es que between toma todo el contenido padre, y around no
+    flex-start para colocarlos al inicio
+    flex-end para colocarlos al final
+    */
+    padding: 0;
+    flex-direction: column;
+    list-style: none;
+}
+
+.navegacion ul li{
+    text-align: center;
+    padding: 1rem 0;
+}
+
+@media screen and (min-width:468px){
+    .navegacion ul{
+        flex-direction: row;
+    }
+}
+
+.navegacion ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Al usar display flex en el body, vamos a usar el contenido como   */
+
+.contenido-principal{
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width:468px){
+    .contenido-principal{
+        max-width: 50%;
+        margin: 0 auto;
+    }
+}
+
+/* Para que order funcione en este caso debe tener el contenido un display flex */
+
+
+
+.sidebar{
+    background-color: #e5e5e5;
+    order: 0;
+    padding: 2rem;
+}
+
+@media screen and (min-width:768px){
+    /* Para que order funcione en este caso debe tener el contenido un display flex */
+    .contenido{
+        display: flex;
+    }
+    .sidebar{
+        /* el primer 0 es para que no crezca el segundo para que se ponga pequeño y el  otro la base que sera un 30% con esto le decimos al contneido que tome el 30% del contenido y el restos se lo deje al otro elemento */
+        flex: 0 0 20%;
+        /*Para cambiar el orden puede usarse order, con -1 lo coloca antes, si colocas 2 lo coloca despues*/
+        order: -1;
+    }
+
+    .derecha{
+        order: 2;
+    }
+
+    /* Para que order funcione en este caso debe tener el contenido un display flex */
+}
+
+
+.footer{
+    background-color: #db008d;
+    text-align: center;
+    color:white;    
+}
