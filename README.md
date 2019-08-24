@@ -26,18 +26,26 @@ And this repository, i will be uploading summary of course Css advanced with Fle
 
 # Sixth project | Coments with Flexbox
 
-![Coments](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/6-layoutsFlex-flexbox/cometarios-flexbox.png)
+![Coments](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/7-layoutsFlex-flexbox/cometarios-flexbox.png)
 
 # Seventh project | Center text, and vertical with Flexbox
 
-![Center](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/6-layoutsFlex-flexbox/centrado-vertical.png)
+![Center](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/7-layoutsFlex-flexbox/centrado-vertical.png)
 
 # Eighth project | Mansory style with Flexbox
 
-![mansory](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/6-layoutsFlex-flexbox/mansory-flexbox.png)
+![mansory](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/7-layoutsFlex-flexbox/mansory-flexbox.png)
 
-# Nineth project | Dashboard with Flexbox
+# Nineth project | Footer fixed with flexbox
 
+![Admin](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/7-layoutsFlex-flexbox/footer-fijo-flexbox.png)
+
+# Tenth project | Dashboard with Flexbox
+
+![Admin](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/8-adminflex-flexbox/admin-flexbox-gulp-sass.png)
+
+
+<<<<<<< HEAD
 ![Admin](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/7-adminflex-flexbox/admin-flexbox-gulp-sass.png)
 
 # Css Grid 
@@ -89,3 +97,5 @@ If you define Grid axis row you had Grid track row.
 # First project with Css GRID
 
 
+=======
+>>>>>>> 9be5202a9cf55d196215c86e8998c7eda8b277c0
