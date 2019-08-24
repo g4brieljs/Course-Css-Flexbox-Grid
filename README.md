@@ -2,6 +2,8 @@
 
 And this repository, i will be uploading summary of course Css advanced with Flexbox and css grid.
 
+# Projects with CSS FLEXBOX
+
 # First project | Cards for blog with Flexbox
 
 ![Cards](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/1-Cards-flexbox/cardflexbox.png)
@@ -37,3 +39,53 @@ And this repository, i will be uploading summary of course Css advanced with Fle
 # Nineth project | Dashboard with Flexbox
 
 ![Admin](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/7-adminflex-flexbox/admin-flexbox-gulp-sass.png)
+
+# Css Grid 
+
+**What is CSS GRID?** is a system of 2 dimention, Grid is a new form of create layouts, nothing framework you would has control on laouts you create.
+
+**CSS FLEXBOX** is one dimention
+**CSS GRID** is two dimention
+
+![example](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/9-CssGrid/basicGrid.png)
+
+**You can use FLEXBOX and GRID together**
+
+**Important concepts**
+
+-Grid lines
+![example](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/9-CssGrid/concept1.png)
+
+-Grid Row
+![example](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/9-CssGrid/concept2.png)
+
+-Grid Column
+![example](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/9-CssGrid/concept3.png)
+
+-Grid track
+![example](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/9-CssGrid/concept4.png)
+![example](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/9-CssGrid/concept5.png)
+**Important**
+If you define Grid axis row you had Grid track row.
+
+-Grid Cell
+![example](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/9-CssGrid/concept6.png)
+**Similar a table of HTML**
+
+-Grid area
+![example](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/9-CssGrid/concept7.png)
+**A area can has several cells, when you agroup the cell you will have area**
+
+# Basics of Grid
+**Container**
+-display: grid;
+-grid-template-columsn: 50% 25% 25%;
+-grid-tamplate-rows: 25% 25% 25% 25%;
+
+**Sons**
+-- grid-column: 1 / 2;
+-- grid-row: 1 / 5;
+
+# First project with Css GRID
+
+

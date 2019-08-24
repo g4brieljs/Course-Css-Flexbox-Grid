@@ -1,0 +1,41 @@
+
+h2 {
+    margin: 0;
+}
+.servicios {
+    border: 3px solid black;
+    display: grid;
+    /* can use 2 dimention */
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 50% 50%;
+    height: 100px;
+}
+
+.servicio {
+    color: white;
+    text-align: center;
+}
+
+.servicio-1 {
+    background-color: darkviolet;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3; 
+}
+
+.servicio-2 {
+    background-color: limegreen;
+    /*Better form*/
+    grid-column: 2 / 4;
+    /* Other form */
+    /* Span take a first line value */
+    grid-column: 2 / span 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.servicio-3 {
+    background-color: teal;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
