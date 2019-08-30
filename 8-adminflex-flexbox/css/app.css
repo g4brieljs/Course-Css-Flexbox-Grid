@@ -1,0 +1,214 @@
+@charset "UTF-8";
+/* Fuentes */
+/* Tamaño de Media Queries */
+/* Colores */
+/** Media Queries **/
+html {
+  box-sizing: border-box;
+  height: 100%; }
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit; }
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #eeeeee;
+  height: 100%; }
+
+img {
+  max-width: 100%; }
+
+.centrado {
+  text-align: center; }
+
+.oculto {
+  display: none; }
+
+.no-menu.pagina .sidebar {
+  margin-left: -20rem; }
+
+.pagina {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column; }
+
+.header {
+  /* habilitar flexbox */
+  display: flex; }
+  .header .nombre-sitio {
+    /* es mas pequeño en first mobile */
+    flex: 0 0 5rem;
+    /* fondo */
+    background-color: #003f8c;
+    padding: 1rem;
+    display: flex;
+    align-items: center; }
+    @media only screen and (min-width: 1024px) {
+      .header .nombre-sitio {
+        /* crece en patallas grandes */
+        flex: 0 0 20rem; } }
+    .header .nombre-sitio h1 {
+      color: #FFFFFF;
+      margin: 0; }
+    .header .nombre-sitio .escritorio {
+      display: none; }
+      @media only screen and (min-width: 1024px) {
+        .header .nombre-sitio .escritorio {
+          display: block; } }
+    @media only screen and (min-width: 1024px) {
+      .header .nombre-sitio .movil {
+        display: none; } }
+
+/* para evitar el  nesting */
+.barra {
+  /* flexbox */
+  display: flex;
+  /* para posicionarlos uno de cada lado */
+  justify-content: space-between;
+  /* tome todo lo que falta del contenido  */
+  flex: 1;
+  background-color: #005b9f; }
+  .barra .menu-izquierdo {
+    display: flex;
+    /* centrar verticalmente */
+    align-items: center;
+    padding: 1rem; }
+    .barra .menu-izquierdo i {
+      color: #FFFFFF;
+      font-size: 1.4rem; }
+    .barra .menu-izquierdo .fa-arrow-right {
+      display: none; }
+  .barra .menu-derecho {
+    display: flex; }
+    .barra .menu-derecho .caja {
+      padding: 0 1rem;
+      display: flex;
+      align-items: center; }
+      .barra .menu-derecho .caja:hover {
+        background-color: #004c86; }
+      .barra .menu-derecho .caja a {
+        color: #FFFFFF;
+        text-decoration: none; }
+        .barra .menu-derecho .caja a span {
+          background-color: #009045;
+          padding: .5rem;
+          border-radius: 50%;
+          margin-left: 1.5rem; }
+
+.sidebar {
+  background-color: #373737;
+  flex: 0 0 20rem;
+  padding: 1rem;
+  color: #FFFFFF;
+  transition: margin-left .3s ease; }
+  .sidebar .usuario {
+    display: flex;
+    align-items: center;
+    /* lo coloca a la derecha y a la izquierda */
+    justify-content: space-around;
+    font-weight: normal; }
+    .sidebar .usuario img {
+      max-width: 5rem; }
+    .sidebar .usuario span {
+      font-weight: bold;
+      display: block; }
+  .sidebar .buscador {
+    margin-top: 1rem; }
+    .sidebar .buscador input[type="text"] {
+      width: 100%;
+      height: 3rem;
+      /* todos los inputs por default tien un border*/
+      border: none;
+      border-radius: 10px;
+      padding-left: 1rem; }
+  .sidebar .menu-admin {
+    margin-top: 2rem; }
+
+.menu-admin .menu {
+  list-style: none;
+  padding: 0 0 0 1rem;
+  /* primer li */ }
+  .menu-admin .menu > li {
+    padding: .5rem;
+    /*SUBNIVEL */ }
+    .menu-admin .menu > li:hover ul {
+      display: block; }
+    .menu-admin .menu > li a {
+      color: #FFFFFF;
+      text-decoration: none;
+      padding: .5rem;
+      transition: paddin-left .3s ease; }
+      .menu-admin .menu > li a:hover {
+        background-color: #005b9f;
+        padding-left: 2rem; }
+    .menu-admin .menu > li ul {
+      display: none;
+      margin-top: 1rem;
+      list-style: none;
+      background-color: #2f2f2f;
+      padding: 1rem; }
+      .menu-admin .menu > li ul li {
+        margin-bottom: 1rem; }
+        .menu-admin .menu > li ul li:last-of-type {
+          margin-bottom: 0; }
+
+.contenedor-principal {
+  /* el main tomara el resto*/
+  flex: 1;
+  /* coloca el sidbar a la izquiera y el contenido principal a la derecha */
+  display: flex; }
+
+.contenido {
+  /*Para que tome todo el contenido siempre es flex: 1*/
+  flex: 1;
+  padding: 2rem; }
+
+.formulario {
+  /* aplicarle el display */
+  display: flex;
+  /* que solo toma el tamño del contenedor*/
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .formulario .campo {
+    flex: 0 0 100%;
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+    /*Esto permitira aplicarle flexbox a todo los campos*/
+    /*Cuando esten juntas*/ }
+    @media only screen and (min-width: 768px) {
+      .formulario .campo {
+        flex: 0 0 calc(50% - 1rem); } }
+    .formulario .campo.expandir {
+      flex: 0 0 calc(100%);
+      align-items: flex-start; }
+      .formulario .campo.expandir label {
+        flex: 0 0 12.5%; }
+      .formulario .campo.expandir textarea {
+        flex: 1; }
+    .formulario .campo label {
+      flex: 0 0 25%; }
+    .formulario .campo input[type="text"] {
+      flex: 0 0 75%;
+      height: 2rem; }
+    .formulario .campo .opciones {
+      display: flex;
+      flex: 1; }
+      .formulario .campo .opciones label {
+        padding-left: 1rem; }
+    .formulario .campo.enviar {
+      display: flex;
+      justify-content: flex-end; }
+      .formulario .campo.enviar .boton {
+        background-color: #005b9f;
+        padding: .5rem 1rem;
+        display: block;
+        text-align: center;
+        color: #FFFFFF;
+        text-decoration: none;
+        transition: background-color .3s ease; }
+        .formulario .campo.enviar .boton:hover {
+          cursor: pointer;
+          background-color: #003e6c; }

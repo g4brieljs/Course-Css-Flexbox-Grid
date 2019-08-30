@@ -10,6 +10,8 @@ html {
 }
 body {
     font-family: $fuente_principal;
+    background-color: $gris;
+    height: 100%;
 }
 img {
     max-width: 100%;
@@ -21,8 +23,259 @@ img {
     display: none;
 }
 
+.no-menu.pagina{
+
+    .sidebar{
+        margin-left: -20rem;
+    }
+}
+
 .pagina{
     min-height: 100%;
     display: flex;
     flex-direction: column;
+}
+
+.header{
+    /* habilitar flexbox */
+    display: flex;  
+
+        .nombre-sitio{
+            /* es mas pequeño en first mobile */
+            flex: 0 0 5rem;
+            @include desktop{
+                /* crece en patallas grandes */
+                flex: 0 0 20rem;
+            }
+            /* fondo */
+            background-color: $secundario;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+
+            h1{
+                color: $blanco;
+                margin: 0;
+            }
+
+            .escritorio{
+                display: none;
+                @include desktop{
+                    display: block;
+                }
+            }
+
+            .movil{
+                @include desktop{
+                    display: none;
+                }
+            }
+        }
+
+}
+
+/* para evitar el  nesting */
+.barra{
+    /* flexbox */
+    display: flex;
+    /* para posicionarlos uno de cada lado */
+    justify-content: space-between;
+
+    /* tome todo lo que falta del contenido  */
+    flex: 1;   
+    background-color: $primario;
+    
+    .menu-izquierdo{
+        display: flex;
+        /* centrar verticalmente */
+        align-items: center;
+        padding: 1rem;
+
+        i{
+            color: $blanco;
+            font-size: 1.4rem;
+        }
+        .fa-arrow-right{
+            display: none;
+        }
+    }
+    .menu-derecho{
+        display: flex;
+        .caja{
+            padding: 0 1rem;
+            display: flex;
+            align-items: center;
+
+            &:hover{
+                background-color: darken($primario, 5);
+            }
+
+            a{
+                color: $blanco;
+                text-decoration: none;
+
+                span{
+                    background-color: $terciario;
+                    padding: .5rem;
+                    border-radius: 50%;
+                    margin-left: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+.sidebar{
+    background-color: $grisOscuro;
+    flex: 0 0 20rem;
+    padding: 1rem;
+    color: $blanco;
+    transition: margin-left .3s ease;
+    .usuario{
+        display: flex;
+        align-items: center;
+        /* lo coloca a la derecha y a la izquierda */
+        justify-content: space-around;
+        img{
+            max-width: 5rem;
+        }
+        font-weight: normal;
+        span{
+            font-weight: bold;
+            display: block;
+        }
+    }
+
+    .buscador{
+        margin-top: 1rem;
+        input[type="text"]{
+            width: 100%;
+            height: 3rem;
+            /* todos los inputs por default tien un border*/
+            border: none;
+            border-radius: 10px;
+            padding-left: 1rem;
+
+        }
+    }
+
+    
+    .menu-admin{
+        margin-top: 2rem;
+    }
+}
+
+.menu-admin{
+    
+    .menu{
+        list-style: none;
+        padding: 0 0 0 1rem;
+        /* primer li */
+        > li{
+            padding: .5rem;
+
+            &:hover{
+               ul{ 
+                   display: block;
+                }
+            }
+
+            a{
+                color: $blanco;
+                text-decoration: none;
+                padding: .5rem;
+                transition: paddin-left .3s ease;
+                &:hover{
+                    background-color: $primario;
+                    padding-left: 2rem;
+                }
+            }
+            /*SUBNIVEL */
+            ul{
+                display: none;
+                margin-top: 1rem;
+                list-style: none;
+                background-color: darken($grisOscuro, 3);
+                padding: 1rem;
+
+                li{
+                    margin-bottom: 1rem;
+
+                    &:last-of-type{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.contenedor-principal{
+    /* el main tomara el resto*/
+    flex: 1;
+    /* coloca el sidbar a la izquiera y el contenido principal a la derecha */
+    display: flex;
+}
+
+.contenido{
+    /*Para que tome todo el contenido siempre es flex: 1*/
+    flex: 1;
+    padding: 2rem;
+}
+
+.formulario{
+    /* aplicarle el display */
+    display: flex;
+    /* que solo toma el tamño del contenedor*/
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+
+    .campo{
+        flex: 0 0 100%;
+        display: flex;
+        margin-bottom: 1rem;
+        align-items: center;
+        @include tablet{
+            flex: 0 0 calc(50% - 1rem);
+        }
+        /*Esto permitira aplicarle flexbox a todo los campos*/
+        
+        /*Cuando esten juntas*/
+        &.expandir{
+            flex: 0 0 calc(100%);
+            align-items: flex-start;
+
+            label{
+                flex: 0 0 12.5%;
+            }   
+            textarea{
+                flex: 1;
+            }
+        }
+        label{
+            flex: 0 0 25%;
+        }
+        input[type="text"]{
+            flex: 0 0 75%;
+            height: 2rem;
+        }
+
+        .opciones{
+            display: flex;
+            flex: 1;
+            label{
+                padding-left: 1rem;
+            }
+        }
+
+        &.enviar{
+            display: flex;
+            justify-content: flex-end;
+
+            .boton{
+                @include boton($primario);
+            }
+        }
+    }
 }

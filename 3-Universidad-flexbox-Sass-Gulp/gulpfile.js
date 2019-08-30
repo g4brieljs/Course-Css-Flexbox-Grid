@@ -7,7 +7,7 @@ const gulp = require('gulp'),
 // ### gup 4 version is function ###
 
 // Compile scss into css 
-function app(){
+function style(){
     //1. Where is my scss file
     return gulp.src('./scss/**/*.scss')
     // add autoprefixer
@@ -27,10 +27,10 @@ function watch(){
             baseDir: './'
         }
     });
-    gulp.watch('./scss/**/*.scss', app);
+    gulp.watch('./scss/**/*.scss', style);
     gulp.watch('./**/*.html').on('change', browserSync.reload);
     gulp.watch('./js/**/*.js').on('change', browserSync.reload);
 }
 
-exports.app = app;
+exports.style = style;
 exports.watch = watch;

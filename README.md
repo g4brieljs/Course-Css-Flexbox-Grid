@@ -44,10 +44,6 @@ And this repository, i will be uploading summary of course Css advanced with Fle
 
 ![Admin](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/8-adminflex-flexbox/admin-flexbox-gulp-sass.png)
 
-
-<<<<<<< HEAD
-![Admin](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/7-adminflex-flexbox/admin-flexbox-gulp-sass.png)
-
 # Css Grid 
 
 **What is CSS GRID?** is a system of 2 dimention, Grid is a new form of create layouts, nothing framework you would has control on laouts you create.
@@ -95,7 +91,3 @@ If you define Grid axis row you had Grid track row.
 -- grid-row: 1 / 5;
 
 # First project with Css GRID
-
-
-=======
->>>>>>> 9be5202a9cf55d196215c86e8998c7eda8b277c0
