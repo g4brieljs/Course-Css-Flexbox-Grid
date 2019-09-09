@@ -190,7 +190,7 @@ justify-content: space-between;
     }
 ```
 
-![example](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/9-CssGrid/template-area.png)
+![example](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/9-CssGrid/first1.png)
 
 
 
