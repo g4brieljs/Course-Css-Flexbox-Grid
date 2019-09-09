@@ -14,22 +14,44 @@ img {
     height: 100vh;
     width: 900px;
     margin: 0 auto;
+    
+    /* Display grid */
+    display: grid;
+    /* grid columns*/
+    grid: 100px auto 100px / repeat(4, 25%); 
+    
+    /*
+    template area
+    le pasas el nombre:
+    */
+    grid-template-areas: 
+        "header header header header"
+        "principal principal principal sidebar"
+        "footer footer footer footer";
+    
+    /*separacion*/
+    grid-gap: 1rem;
+    
 }
 
 .header {
     background-color: coral;
     color: white;
     text-align: center;
+    grid-area: header;
 }
 
 .contenido-principal {
     background-color: darkred;
+    grid-area: principal;
 }
 .sidebar {
     background-color: olive;
+    grid-area: sidebar;
 }
 .footer {
     background-color: navy;
+    grid-area: footer;
 }
 
 
@@ -37,18 +59,45 @@ img {
 .contenedor-media {
     margin: 0 auto;
     max-width: 800px;
+
+    display: grid;
+
+    /*definiendo orden*/
+    grid-template-areas: 
+        "titulo"
+        "slogan"
+        "info"
+        "imagen"
+        "entrada";
+}
+
+@media screen and (min-width:768px){
+    .contenedor-media{
+        grid-template-areas: 
+            "titulo titulo"
+            "imagen slogan"
+            "imagen info" 
+            "entrada entrada";
+        grid-template-columns: 50% 50%;
+    }
 }
 
 
 .titulo {
-   
+    grid-area: titulo;
 }
+
 .slogan {
+    grid-area: slogan;
 }
 
 .imagen {
+    grid-area: imagen;
 }
+
 .info {
+    grid-area: info;
 }
 .entrada {
+    grid-area: entrada;
 }

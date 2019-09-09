@@ -77,17 +77,122 @@ If you define Grid axis row you had Grid track row.
 **Similar a table of HTML**
 
 -Grid area
-![example](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/9-CssGrid/concept7.png)
+![example](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/9-CssGrid/concept7%5D.png)
 **A area can has several cells, when you agroup the cell you will have area**
 
 # Basics of Grid
-**Container**
--display: grid;
--grid-template-columsn: 50% 25% 25%;
--grid-tamplate-rows: 25% 25% 25% 25%;
 
-**Sons**
+### Container
+
+```css
+display: grid;
+grid-template-columsn: 50% 25% 25%;
+grid-tamplate-rows: 25% 25% 25% 25%;
+```
+
+### Sons
+
 -- grid-column: 1 / 2;
 -- grid-row: 1 / 5;
+
+### Auto
+
+- grid-auto-flow: dense; column; row;
+// row es el default
+
+### Shorthand
+- grid: row row / column column;  
+```css 
+grid: 50% 50% / 33% 33% 33% 
+```
+
+### Grid area
+```css
+- grid-row: 1 / 3;
+- grid-column: 1 / 3;
+```
+- Shorthand for grid-row and grid-column:
+```css
+grid-area: 1 / 1 / 3 / 3;
+```
+
+### Repeat
+
+```css
+grid-template-columns: 50% repeat(2, 25%);
+```
+
+```css
+grid: repeat(2, 50%) / repeat(3, 33%);
+```
+
+### Grid template area
+
+```css
+ /*
+    template area
+    le pasas el nombre:
+    */
+    grid-template-areas: 
+        "header header header header"
+        "principal principal principal sidebar"
+        "footer footer footer footer"
+```
+
+No es bueno usar margin con los template, se recomienda usar:
+```css
+grid-gap: 1rem;
+grid-column-gap: 100px;
+grid-row-gap: 100px;
+```
+
+### Fraction in css Grid
+```css
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 2fr 1fr 1fr;
+```
+Primero siempre sera row row, luego column column
+```css
+grid: repeat(2, 1fr) / repeat(3, 1fr);
+```
+
+### Align in css grid
+
+```css
+/*Vertical*/
+
+/*UP vertical*/
+align-items: start;
+```
+
+```css
+/*Horizontal*/
+justify-content: center;
+/*center horizontal*/
+
+/*Space bettween*/
+justify-content: space-between;
+```
+
+## Experimental Design
+
+```css
+.contenedor{
+        grid-template-areas: 
+            "header header header header"
+            "izquierda nav nav nav"
+            "izquierda contenido contenido derecha"
+            "izquierda contenido contenido derecha"
+            "footer footer footer derecha";
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 80px 80px auto auto 80px; 
+        grid-gap: 1rem;
+    }
+```
+
+![example](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/9-CssGrid/firts1.png)
+
+
+
 
 # First project with Css GRID
