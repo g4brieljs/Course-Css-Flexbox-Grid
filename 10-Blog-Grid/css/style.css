@@ -1,0 +1,131 @@
+html {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+}
+.titulo {
+    text-align: center;
+}
+.header {
+    padding-top: 3rem;
+}
+.navegacion {
+    background-color: black;
+    margin: 3rem 0;
+}
+
+.navegacion a {
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+.navegacion a:hover {
+    background-color: #c9c84a;
+    color: black;
+}
+img {
+    max-width: 100%;
+}
+.slider img {
+    width: 100%;
+}
+.entrada p {
+    text-align: justify;
+}
+
+.informacion {
+    background-color: #c9c84a;
+    color: white;
+    font-size: 1.4rem;
+}
+.informacion p {
+    margin: 0 0 .5rem 0;
+    padding: 1rem;
+    text-align: center;
+}
+.imagen1,
+.imagen2 {
+    text-align: center;
+}
+blockquote {
+    font-size: 1.4rem;
+    text-align: center;
+    font-style: italic;
+    color: #525252;
+}
+.footer {
+    background-color: #c9c84a;
+    padding-top: 3rem;
+    text-align: center;
+}
+.footer a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #525252;
+    margin-bottom: .5rem;
+}
+.copyright {
+    color: white;
+    background-color: #282828;
+    margin: 3rem 0 0 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+/** Grid aqui**/
+
+.navegacion nav{
+    display: grid;
+    /*minmax para no usar media querys en el menu*/
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+@media screen and (min-width:768px){
+    .contenido-principal{
+        display: grid;
+        /*max-content se encargara de revisar cual es el contenido maximo, en este caso las img*/
+        grid-template-columns: minmax(100px, max-content) auto minmax(100px, max-content);
+        grid-template-rows: repeat(4, auto);
+        grid-gap: 1rem;
+    }
+    .titulo{
+        grid-column: 1 / 4;
+    }
+    .informacion{
+        grid-row: 2 / 3;
+    }
+    .imagen1{
+        grid-row: 3 / 4;
+        grid-column: 3 / 4;
+    }
+    .imagen2{
+        grid-row: 4 / 5;
+    }
+    .entrada{
+        grid-column: 2 / 3;
+        grid-row: 2 /  5;
+    }
+}
+
+.footer .contenedor{
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}

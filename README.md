@@ -192,7 +192,6 @@ justify-content: space-between;
 
 ![example](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/9-CssGrid/first1.png)
 
-
-
-
 # First project with Css GRID
+
+![blog](https://github.com/g4brieljs/Course-Css-Flexbox-Grid/blob/master/10-Blog-Grid/blog.png)
